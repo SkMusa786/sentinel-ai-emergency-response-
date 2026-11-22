@@ -1,239 +1,349 @@
-# SENTINEL AI
+# 🚨 SENTINEL AI
+### Adaptive Emergency Vehicle Priority & Intelligent Response Coordination Platform
 
-**Adaptive Emergency Vehicle Priority & Intelligent Response Coordination Platform**
+<p align="center">
 
-SENTINEL AI is a frontend prototype for coordinating emergency responses in Visakhapatnam, Andhra Pradesh. It demonstrates an end-to-end simulated workflow: emergency intake, ambulance assignment, route selection, green-corridor preparation, traffic monitoring, hospital notification, and dynamic rerouting after a road blockage.
+**Every second matters. Every connection matters.**
 
-> This is a software-first simulation. Ambulances, traffic, hospitals, signals, routes, and improvements shown in the interface are simulated. No real emergency, traffic, GPS, ambulance, hospital, or signal system is connected.
+</p>
+
+<p align="center">
+
+🚀 <a href="https://sentinel-ai-emergency-response-two.vercel.app/">Live Demo</a>
+
+</p>
 
 ---
 
-## 1. Quick start
+## 🌐 Live Demo
 
-### Requirements
+**Try SENTINEL AI here:**
 
-- Windows, macOS, or Linux
-- Node.js 18 or newer
+🔗 https://sentinel-ai-emergency-response-two.vercel.app/
+
+---
+
+## 📌 Overview
+
+SENTINEL AI is an intelligent emergency response coordination platform designed to improve emergency vehicle movement through urban traffic.
+
+It provides a centralized command interface that connects emergency dispatch, ambulance coordination, route intelligence, simulated traffic signal prioritization, dynamic rerouting, and hospital preparedness into a unified workflow.
+
+The platform aims to minimize avoidable delays during critical emergencies by enabling smarter coordination between emergency responders, traffic management, and healthcare facilities.
+
+---
+
+## 🚨 Problem Statement
+
+Emergency vehicles frequently encounter challenges that delay critical response times:
+
+- Heavy urban traffic congestion
+- Unexpected road blockages and traffic disruptions
+- Lack of coordination between emergency services and traffic management
+- Inefficient emergency route planning
+- Delayed communication with receiving hospitals
+- Limited centralized visibility into emergency operations
+
+In time-critical emergencies, every delay can matter.
+
+---
+
+## 💡 Proposed Solution
+
+SENTINEL AI introduces a centralized intelligent emergency coordination system that simulates the entire emergency response journey.
+
+The platform enables emergency operators to:
+
+- Monitor active emergencies through a command center
+- Assign ambulances to emergency incidents
+- Visualize emergency routes on an interactive map
+- Simulate Green Corridor traffic signal coordination
+- Dynamically reroute ambulances when road blockages occur
+- Coordinate hospital preparedness through incoming emergency notifications
+- Monitor ambulance fleet availability and operational status
+
+---
+
+## ✨ Key Features
+
+### 🖥️ Command Center
+A centralized dashboard displaying emergency statistics, active incidents, ambulance availability, operational activity, and city-wide emergency overview.
+
+### 🚑 Emergency Dispatch
+Register emergency incidents, assign available ambulances, select hospitals, and manage response workflows.
+
+### 🗺️ Live Operations
+Interactive map visualization of emergencies, ambulance locations, hospitals, emergency routes, and simulated traffic conditions.
+
+### 🚦 Green Corridor Coordination
+Simulates traffic signal prioritization along an ambulance's route, coordinating intersections to facilitate smoother emergency vehicle movement.
+
+### 🔄 Dynamic Rerouting
+Simulates alternate route selection when road blockages or traffic disruptions affect the ambulance's current route.
+
+### 🚑 Ambulance Fleet Management
+Monitor ambulance availability, assignment status, and operational states through a centralized interface.
+
+### 🏥 Hospital Network
+View hospital information and simulate pre-arrival notifications to improve emergency preparedness.
+
+### 📊 Analytics Dashboard
+Visualize emergency statistics, response activity, and operational insights.
+
+### 📜 Incident History
+Maintain a centralized view of emergency incidents and their statuses.
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| React | Component-based UI development |
+| Vite | Development environment and build tool |
+| JavaScript | Application logic and simulation |
+| React Router | Navigation and routing |
+| Context API | Shared application state |
+| Leaflet | Interactive map visualization |
+| React Leaflet | Map integration with React |
+| OpenStreetMap | Map visualization and tiles |
+| Recharts | Analytics and data visualization |
+| Framer Motion | Animations and transitions |
+| Lucide React | Icons and interface elements |
+
+---
+
+## 🏗️ System Architecture
+
+```text
+                   SENTINEL AI
+                       |
+             Emergency Command Center
+                       |
+       ┌───────────────┼────────────────┐
+       |              |                |
+   Emergency       Ambulance       Traffic
+   Dispatch       Coordination    Intelligence
+       |              |                |
+       └──────────────┼────────────────┘
+                      |
+             Green Corridor
+             Coordination
+                      |
+             Dynamic Rerouting
+                      |
+             Hospital Network
+                      |
+          Unified Emergency Response
+```
+
+---
+
+## 🔄 Emergency Response Workflow
+
+```text
+Emergency Reported
+        ↓
+Incident Registration
+        ↓
+Ambulance Assignment
+        ↓
+Emergency Route Selection
+        ↓
+Green Corridor Preparation
+        ↓
+Live Route Monitoring
+        ↓
+Road Blockage Detection
+        ↓
+Dynamic Rerouting (if required)
+        ↓
+Hospital Pre-Alert
+        ↓
+Emergency Response Completion
+```
+
+---
+
+## 🖥️ Application Modules
+
+| Module | Description |
+|---|---|
+| Command Center | Central emergency overview and monitoring |
+| Live Operations | Map-based operational visualization |
+| Emergency Dispatch | Emergency registration and ambulance assignment |
+| Ambulance Fleet | Fleet availability and status management |
+| Traffic Intelligence | Traffic conditions and disruption visualization |
+| Green Corridor | Emergency route signal priority simulation |
+| Hospital Network | Hospital coordination and preparedness |
+| Incident History | Emergency incident records |
+| Analytics | Operational data and insights |
+| Settings | Application configuration |
+
+---
+
+## 🚦 Green Corridor — How It Works
+
+The Green Corridor module simulates coordinated traffic signal prioritization for an emergency vehicle.
+
+1. An ambulance is assigned to an emergency.
+2. Its emergency route is identified.
+3. Intersections along the route are identified.
+4. Approaching junctions are prepared for signal priority.
+5. Priority is simulated as the ambulance approaches each intersection.
+6. After the ambulance passes, priority is released.
+7. The process continues across the route to simulate a coordinated Green Corridor.
+
+The goal is to demonstrate how coordinated traffic management could help reduce unnecessary stopping at intersections during emergency movement.
+
+---
+
+## 🧪 Demo Scenarios
+
+The prototype supports demonstration scenarios such as:
+
+- Critical cardiac emergency requiring immediate response
+- Ambulance assignment and route visualization
+- Green Corridor preparation across intersections
+- Road blockage triggering dynamic rerouting
+- Hospital pre-arrival notification
+- Centralized emergency monitoring through the command center
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js
 - npm
+- Git
 
-### Run locally
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/SENTINEL_AI.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd SENTINEL_AI
+```
+
+### 3. Install dependencies
 
 ```bash
 npm install
+```
+
+### 4. Start the development server
+
+```bash
 npm run dev
 ```
 
-Open the local address printed by Vite, usually:
+### 5. Open in your browser
 
-**http://localhost:5173**
+```text
+http://localhost:5173
+```
 
-### Production build
+---
+
+## 📦 Production Build
+
+Build the application:
 
 ```bash
 npm run build
+```
+
+Preview the production build locally:
+
+```bash
 npm run preview
 ```
 
-The optimized files are generated in `dist/`.
-
 ---
 
-## 2. Demo scenario
+## 🌐 Deployment
 
-Use this sequence for a clear 3–5 minute presentation.
+The SENTINEL AI frontend is deployed using **Vercel**.
 
-### Step 1: Command Center
-
-1. Open **Command Center**.
-2. Explain the six KPI cards:
-   - active emergencies
-   - available ambulances
-   - units en route
-   - average ETA
-   - ready hospitals
-   - active green corridors
-3. Show the real Leaflet map centered on Visakhapatnam.
-4. Point out ambulance, incident, and hospital markers.
-5. Select the critical **INC-4821** incident.
-
-### Step 2: Live Operations
-
-1. Open **Live Operations**.
-2. Select the active ambulance if needed.
-3. Explain ETA, journey progress, destination, speed, and upcoming junctions.
-
-### Step 3: Green Corridor
-
-1. Open **Green Corridor**.
-2. Show the selected ambulance and route.
-3. Explain the junction sequence and priority states.
-4. State clearly: **“The signal-priority data is simulated; no real traffic signals are connected.”**
-
-### Step 4: Dynamic rerouting
-
-1. Click **Trigger Road Blockage**.
-2. Wait for the recalculation status to finish.
-3. Show the blocked area, alternate route, updated ETA, and corridor recovery.
-4. Explain that the old route, new route, additional delay, and updated priorities are frontend simulation results.
-
-### Step 5: Hospital coordination
-
-1. Open **Hospital Network**.
-2. Select the receiving hospital.
-3. Show readiness, bed and ICU indicators, and incoming ambulance details.
-4. Explain that hospital data and acknowledgements are simulated.
-
-### Step 6: Create a new emergency
-
-1. Open **Emergency Dispatch**.
-2. Choose a category and severity.
-3. Enter a pickup location.
-4. Select a hospital.
-5. Submit the form.
-6. Show the new incident, ambulance assignment, hospital update, activity feed, and dashboard changes.
-
-### Step 7: Analytics and reset
-
-1. Open **Analytics** to show simulated volume and response metrics.
-2. Open **Settings** and demonstrate simulation controls.
-3. Use **Reset Demo State** to restore the starting scenario.
-
----
-
-## 3. Application pages
-
-| Page | Purpose |
-|---|---|
-| Command Center | Operational overview, KPI cards, live map, active incidents, and activity feed |
-| Live Operations | Selected ambulance, route progress, ETA, and upcoming junctions |
-| Emergency Dispatch | Validated emergency form and automatic frontend dispatch |
-| Ambulance Fleet | Fleet search, status filtering, details, and unit locations |
-| Traffic Intelligence | Simulated congestion levels, road conditions, and traffic forecast |
-| Green Corridor | Junction timeline and simulated signal-priority status |
-| Hospital Network | Simulated readiness, bed/ICU status, and incoming ambulances |
-| Incident History | Past incident filtering and operational metrics |
-| Analytics | Recharts dashboards and baseline-versus-optimized comparison |
-| Settings | Simulation speed, traffic level, refresh, notifications, and reset |
-
----
-
-## 4. Key interactions
-
-- Click emergency markers or active-emergency rows to select an incident.
-- Search for navigation pages using the top search field.
-- Search and filter the ambulance fleet.
-- Search and filter incident history.
-- Create an emergency to:
-  - generate a unique incident ID
-  - assign the first available ambulance
-  - update the hospital's incoming count
-  - add a green-corridor activity event
-- Trigger a road blockage to recalculate the route and update ETA.
-- Reset the entire frontend simulation to its initial demo state.
-
----
-
-## 5. Technology
-
-- React
-- Vite
-- JavaScript
-- React Router
-- Leaflet and React Leaflet
-- OpenStreetMap tiles
-- Lucide React
-- Recharts
-- Framer Motion
-- Context API
-
-No database or backend is required for the current demo.
-
----
-
-## 6. Project structure
+### Deployment Pipeline
 
 ```text
-src/
-├── App.jsx                 # Routes and application pages
-├── App.css                 # Responsive product UI styling
-├── SimulationContext.jsx   # Shared frontend simulation state
-├── data.js                 # Seed ambulances, hospitals, incidents, routes, and activity
-├── index.css               # Global base styles
-└── main.jsx                # React entry point
+Local Development
+      ↓
+Git & GitHub
+      ↓
+Vercel Integration
+      ↓
+Production Build
+      ↓
+Live Deployment
 ```
 
-The structure separates UI, seed data, and shared simulation state while keeping the prototype easy to modify. Integration points can later be replaced with a FastAPI backend.
+### Live Application
+
+🔗 https://sentinel-ai-emergency-response-two.vercel.app/
 
 ---
 
-## 7. Demo defaults
+## ⚠️ Prototype Disclaimer
 
-The initial scenario includes:
+SENTINEL AI is currently a frontend demonstration prototype operating with simulated data and interactions.
 
-- 4 active emergencies
-- 1 critical cardiac emergency
-- 6 ambulances across available, dispatched, en-route, and transporting states
-- 4 hospitals
-- an active green-corridor route
-- a traffic congestion zone
-- a seeded system activity feed
-- simulated road-disruption and rerouting functionality
+The current implementation does not directly connect to:
 
----
+- Real ambulance GPS systems
+- Live traffic infrastructure
+- Physical traffic signal controllers
+- Actual emergency dispatch systems
+- Hospital management systems
+- Real-time emergency communication networks
 
-## 8. What is and is not connected
+The demonstrated emergency coordination, traffic prioritization, ambulance movement, and rerouting functionalities are simulations.
 
-### Connected
-
-- Interactive OSM map
-- Frontend route and marker visualization
-- Frontend dispatch workflow
-- Shared in-memory state
-- Dynamic rerouting demonstration
-- Search and filtering
-- Settings and reset controls
-
-### Not connected
-
-- Real GPS positions
-- Real ambulance APIs
-- Real hospital integrations
-- Real traffic feeds
-- Real traffic signals
-- Real emergency dispatch systems
-- Real navigation or route optimization
-
-All network, medical, routing, and operational values must be presented as **simulated demo data**.
+Real-world implementation would require secure backend services, real-time data integration, authorized infrastructure access, and collaboration with municipal authorities, emergency services, and healthcare providers.
 
 ---
 
-## 9. Suggested judge presentation
+## 🔮 Future Scope
 
-**Problem:** Emergency responders need coordinated awareness across the ambulance, route, junctions, traffic, and hospital.
-
-**Solution:** SENTINEL AI provides one operational interface that connects the full response journey instead of showing isolated tracking information.
-
-**Demo emphasis:** Use the critical incident, trigger rerouting, show hospital acknowledgement, and finish by comparing the normal and rerouted route in the corridor and analytics views.
-
-**Position responsibly:** Present the prototype as a validated software workflow for future integration, not as a claim of real-world safety or performance.
+- Real-time ambulance GPS tracking
+- AI-powered traffic congestion prediction
+- Intelligent emergency route optimization
+- Integration with authorized traffic signal systems
+- IoT-based road condition monitoring
+- Hospital capacity and availability integration
+- Predictive ambulance allocation
+- Real-time emergency communication
+- Backend infrastructure and secure database
+- Integration with Smart City command centers
 
 ---
 
-## 10. Validation
+## 🎯 Vision
 
-Before presenting, run:
+To create a connected emergency response ecosystem where ambulances, traffic infrastructure, emergency control centers, and hospitals coordinate intelligently to reduce response delays and improve emergency transportation efficiency.
 
-```bash
-npm run build
-npm run dev
-```
+---
 
-Confirm:
+## 👥 Project
 
-- the Command Center loads
-- the map and markers render
-- an emergency can be selected
-- a new dispatch can be submitted
-- a road blockage triggers rerouting
-- the hospital and fleet views update
-- **Reset Demo State** restores the seeded scenario
+**SENTINEL AI**  
+*Adaptive Emergency Vehicle Priority & Intelligent Response Coordination Platform*
+
+Developed as an innovation-focused project exploring smarter, connected, and coordinated urban emergency response.
+
+---
+
+<p align="center">
+
+🚨 **SENTINEL AI**
+
+*Every second matters. Every connection matters.*
+
+</p>
